@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>Bitbucket Status</ion-card-header>
+    <ion-card-content>{{status.status.description}}</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>Bitbucket {{API.name}}</ion-card-header>
+    <ion-card-content>{{API.status}}</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>Bitbucket {{https.name}}</ion-card-header>
+    <ion-card-content>{{https.status}}</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>Bitbucket {{website.name}}</ion-card-header>
+    <ion-card-content>{{login.status}}</ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>Bitbucket Incidents</ion-card-header>
+    <ion-card-content>{{incidents}}</ion-card-content>
+  </ion-card>
+
+</ion-content>
